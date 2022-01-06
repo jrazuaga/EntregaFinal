@@ -1,0 +1,8 @@
+$top:20px;
+$just:flex-end;
+.footerFlex{
+    display: flex;
+    margin-top: $top;
+    flex-direction: row;
+    justify-content:$just;
+}

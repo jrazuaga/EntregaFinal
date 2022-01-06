@@ -1,0 +1,64 @@
+//variables
+$textalign:center;
+$paddingtit:25px;
+$paddinglat:10px;
+
+.titulo{
+    text-align:$textalign;
+    padding-left:$paddingtit;
+    flex-direction:$fdirection;
+    color: map-get($colores,titulos );
+
+}
+section{
+    background-color: map-get($colores, $fondo );
+    border-radius: map-get($estilos, $radius );
+}
+.lateral{
+    background-color:map-get($colores, $fondo ) ;
+    border-radius: $radius;
+}
+.laterlText{
+    text-align:$textlat;
+    padding:$paddinglat;
+}
+ div p{
+    text-align: map-get($estilos, $tAlignj );
+    padding:10px;
+}
+.pFlex{
+    display: flex;
+    flex-direction: column;
+    text-align: map-get($estilos,$tAlignj )
+}
+h3{
+    text-align: map-get($estilos, $tAlign );
+}
+
+.logoNosotros{
+    @include sizes(50px,50px );
+}
+.img{
+    width: 70px;
+    height: 50 px;
+}
+.margin{
+    margin: 50px
+}
+$colores:(
+    fondo:gold,
+    titulos:rgb(97, 81, 81),
+    parrafos:grey
+);
+$estilos:( 
+    flex:row,
+    tAlign:center,
+    radius:20px,
+    tAlingj:justify,
+) ;
+@mixin sizes ($width,$height) {
+    width: $width;
+    height: $height;
+
+    
+}
